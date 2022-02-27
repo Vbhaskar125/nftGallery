@@ -22,7 +22,7 @@ function Network({submitreqhandler}) {
         </div>
 
   </div>*/}
-        <button type='submit' className=' btn btn-outline-dark btn-sm' onClick={submitreqhandler}>Fetch NFT</button>
+        <button type='submit' className=' btn btn-light btn-sm' onClick={submitreqhandler}>Fetch NFT</button>
 
 
     
