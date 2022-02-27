@@ -1,0 +1,136 @@
+truffle migrate --network rinkeby --reset
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/playGround.sol
+> Artifacts written to /home/falcon46/Documents/projects/learn react SC integration/NftGallery/Smartcontracterc1155/build/contracts
+> Compiled successfully using:
+   - solc: 0.8.11+commit.d7f03943.Emscripten.clang
+
+WARNING: Ganache forking only supports EIP-1193-compliant providers. Legacy support for send is currently enabled, but will be removed in a future version _without_ a breaking change. To remove this warning, switch to an EIP-1193 provider. This error is probably caused by an old version of Web3's HttpProvider (or ganache < v7)
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 29999916 (0x1c9c32c)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+undefined
+   > block number:        10230867
+   > block timestamp:     1645810136
+   > account:             0xDf7c0F64a75A08DdCaeAe281585d56fDB21Df504
+   > balance:             0.086605314106489309
+   > gas used:            250142 (0x3d11e)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000625355002251278 ETH
+
+   -------------------------------------
+   > Total cost:     0.000625355002251278 ETH
+
+
+2_playGround.js
+===============
+
+   Deploying 'playGround'
+   ----------------------
+undefined
+   > block number:        10230869
+   > block timestamp:     1645810148
+   > account:             0xDf7c0F64a75A08DdCaeAe281585d56fDB21Df504
+   > balance:             0.076433501573939509
+   > gas used:            4022812 (0x3d621c)
+   > gas price:           2.500000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.010057030032182496 ETH
+
+   -------------------------------------
+   > Total cost:     0.010057030032182496 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.010682385034433774 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0x714c5a637f1fddcf55e2f3dc29d15433c4a89466af401badcc9f4eb63e470ad4
+   ⠦ Blocks: 0            Seconds: 0undefined
+   ⠴ Blocks: 1            Seconds: 5undefined
+   ⠴ Blocks: 1            Seconds: 9undefined
+   ⠴ Blocks: 1            Seconds: 13undefined
+   ⠼ Blocks: 1            Seconds: 17undefined
+   > Blocks: 2            Seconds: 21
+   > contract address:    0x504a6933Ec602B103758884aFd3f5c23BfAc22AA
+   > block number:        10230875
+   > block timestamp:     1645810178
+   > account:             0xDf7c0F64a75A08DdCaeAe281585d56fDB21Df504
+   > balance:             0.086605314106239167
+   > gas used:            250142 (0x3d11e)
+   > gas price:           2.50000001 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00062535500250142 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.00062535500250142 ETH
+
+
+2_playGround.js
+===============
+
+   Deploying 'playGround'
+   ----------------------
+   ⠋ Blocks: 0            Seconds: 0   > transaction hash:    0xdd99d0748db3b85196e5e7a376820eed5d77ecb7fafd4ec32b57380a61fafa70
+undefined
+   ⠦ Blocks: 1            Seconds: 6undefined
+   ⠼ Blocks: 1            Seconds: 10undefined
+   ⠧ Blocks: 1            Seconds: 14undefined
+   ⠴ Blocks: 1            Seconds: 18undefined
+   ⠼ Blocks: 2            Seconds: 22undefined
+   > Blocks: 2            Seconds: 26
+   > contract address:    0xFA9c3bDD4C093fF110Caa0619a59E70E1B1910a6
+   > block number:        10230878
+   > block timestamp:     1645810223
+   > account:             0xDf7c0F64a75A08DdCaeAe281585d56fDB21Df504
+   > balance:             0.076433501569620642
+   > gas used:            4022812 (0x3d621c)
+   > gas price:           2.500000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.010057030036205308 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.010057030036205308 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.010682385038706728 ETH
+
+
+falcon46@falcon46-HP:~/Documents/projects/learn react SC integration/NftGallery/Smartcontracterc1155$ 

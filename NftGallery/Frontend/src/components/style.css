@@ -1,0 +1,78 @@
+.btn-holder {
+   
+    padding: auto;
+    display: block;
+    
+   
+}
+.btn-holder .connectbutton{
+    height: 3.5em;
+    color:white;
+    width: 8em;
+    font-size: large;
+    justify-content: center;
+    justify-items: center;
+    background-color: teal;
+    
+}
+
+.container{
+    
+   float:right;
+   display: flex;
+   background-color: darkgrey;
+
+}
+.inputBox{
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  border: 2px solid black;
+}
+
+.nftDisplay{
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  border: 2px solid black;
+}
+
+/* 
+.container {
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+  }
+  .container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+  }
+
+  .btn-holder{
+    height: 3.5em;
+    width: 8em;
+    justify-content: flex-end;
+    display: flex;
+  
+   <div >
+      <div style={displayOnConnection} className='inputBox'>
+       
+          <div className='network'>
+            <Network submitreqhandler={submitreqhandler}/>
+          </div>   
+        
+          <div>
+          <DisplayNft/>
+          </div>
+      </div>
+     <div>
+        <ConnectButton callback={connectWallet} iswalletconnected={isConnected}/>
+        </div>
+      </div>}
+  
+  
+  
+  
+  
+  */
