@@ -22,14 +22,11 @@ const web3 = new Web3(window.ethereum);
   var nftArray;
 
 
-  let myEtherscanApiKey = "";
+
   let abi_= playGround.abi;
 
   useEffect(()=>{ 
-    if(isConnected){
-// further imporovement
-
-  }},[nftMetadata]);
+   },[nftMetadata]);
 
 
 const displayOnConnection ={
