@@ -22,11 +22,14 @@ const web3 = new Web3(window.ethereum);
   var nftArray;
 
 
-
+  let myEtherscanApiKey = "";
   let abi_= playGround.abi;
 
   useEffect(()=>{ 
-   },[nftMetadata]);
+    if(isConnected){
+// further imporovement
+
+  }},[nftMetadata]);
 
 
 const displayOnConnection ={
@@ -54,12 +57,15 @@ const getNftUrlArray = (async(tokencount, contract)=>{
 
 
 
-
+//0xEa477DDD9cd1FE53665E0d3Ef9E79ca0659F5c5A
 const submitreqhandler =(async()=>{
-  const contract = new web3.eth.Contract(abi_, "0x223CFDf2E5CB5f9b3bD0A50CFb766468835ff884"); // change the contract address to your deployed address
+  const contractAdd= document.getElementById('contractAddress').value;
+  console.log(contractAdd);
+  const contract = new web3.eth.Contract(abi_, contractAdd); // change the contract address to your deployed address
   const addressArr = await window.ethereum.request({method: "eth_requestAccounts",});
   contract.defaultAccount = addressArr[0];
   const totalNumberOfTokens= await contract.methods.getTokenCount().call();
+  console.log(totalNumberOfTokens)
   
 nftArray= await getNftUrlArray(totalNumberOfTokens, contract);
 let metaObj = await getMetadata(nftArray);
@@ -109,7 +115,7 @@ const getMetadata = (async(nftarr)=>{
   
 
     return (
-      <div >
+      <div style={{backgroundImage: `url("https://mdbootstrap.com/img/new/fluid/city/018.jpg")`}}>
         <div style={displayOnConnection} className='inputBox'>
         
             <div className='network'>
@@ -124,12 +130,12 @@ const getMetadata = (async(nftarr)=>{
 
         <div style={{display:"flex", justifyContent:"center"}}>
         {nftMetadata.map((element,index)=>{
-          return (<div style={{border:"1px solid black",display:"flex", flexDirection:"column", width:"14rem"} } key={index}>
+          return (<div style={{border:"1px solid white",display:"flex", flexDirection:"column", width:"14rem", color:"white"} } key={index}>
             <div>{element.name}</div>
             <div style={{display:"flex", justifyContent:"center"}} >
               <img src={element.image} style={{height:"8rem", width:"8rem", }}></img>
             </div>
-            <div>{element.description}</div>
+            <div style={{color:"white"}}>{element.description}</div>
           </div>)
         })}
 

@@ -22,6 +22,12 @@ function Network({submitreqhandler}) {
         </div>
 
   </div>*/}
+  <div>
+  <div className="input-group mb-3 input-group-sm contractAddress">
+            <span className="input-group-text" id="inputGroup-sizing-default">ContractAddress</span>
+            <input type="text" className="form-control " id='contractAddress' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" />
+        </div>
+  </div>
         <button type='submit' className=' btn btn-light btn-sm' onClick={submitreqhandler}>Fetch NFT</button>
 
 
